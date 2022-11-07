@@ -17,7 +17,12 @@ else if (operacion == "*") {
     alert(resultadoMult);
 }
 else (operacion == "/"); {
-    alert(resultadoDivision);
+    if(numero2>0){
+        alert(resultadoDivision);
+    }else{
+        alert("ERROR:NO SE PUEDE DIVIDIR POR 0")
+    }
+    
 }
 
 
