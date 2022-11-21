@@ -1,0 +1,64 @@
+*{
+    font-family: "Arimo", serif;
+    color: black;
+}
+
+body {
+    background-color: rgba(38, 119, 156, 0.63);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 160px repeat(5, 75px);
+    border-radius: 32px;
+    background-color: rgb(167, 42, 69);
+    padding: 15px;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.849);
+    
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: rgb(167, 42, 69) ;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.377), -5px -5px 15px 3px rgba(138, 17, 53, 0.233)
+
+}
+button:active{
+    background-color: rgb(99, 25, 41) ;
+}
+.display{
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgba(100, 100, 100, 0.918);
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 1px 1px 4px 2px inset;
+}
+.col-2{
+    grid-column: span 2;
+}
+#valor-ingresado{
+    font-size: 2.5em;
+
+}
+#valor-anterior{
+    font-size: 1.5em;
+}
